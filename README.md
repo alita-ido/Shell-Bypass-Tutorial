@@ -1,7 +1,7 @@
 # PHP Shell Uploading Scripts and Bypass
 ### Uploader
 1. Normal File Uploader
-
+>
 
     <?php 
         echo 'Uploader<br>';
@@ -13,7 +13,7 @@
             }else {
                 echo '<b>Failed</b><br><br>'; 
             }
-        }
+	}
     ?>
 
 2. CSRF File Uploader
